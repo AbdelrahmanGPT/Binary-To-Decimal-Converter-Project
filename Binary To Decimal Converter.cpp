@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cmath>
+#include"ABODAstd.h"
 
 using namespace std;
 
@@ -98,28 +99,6 @@ double BinaryToDecimal(string BinaryNumber)
 	}
 
 	return DecimalNumber;
-}
-
-bool DoYouWantToContinue()
-{
-	string Choice;
-	do
-	{
-		cout << "DO YOU WANT TO CONTINUE[Y/N]\n";
-		cin >> Choice;
-	} while (Choice != "Y" && Choice != "y" && Choice != "N" && Choice != "n");
-
-	if (Choice == "Y" || Choice == "y")
-	{
-		system("cls");
-		return 1;
-	}
-
-	else
-	{
-		cout << "GOOD BYE :)\n";
-		return 0;
-	}
 }
 
 void PrintBinaryToDecimal(string BinaryNumber)
